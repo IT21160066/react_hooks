@@ -1,10 +1,18 @@
-import Mychannel from "./components/MyChannel/Mychannel";
+import BodyContent from "./components/BodyContent";
+import NavBar from "./components/NavBar";
+import "./index.css";
 
 function App() {
   return (
     <>
       <h1 className="heading">React Hooks</h1>
-      <Mychannel />
+      <NavBar />
+      <BodyContent>
+        <button>Child - 01</button>
+      </BodyContent>
+      <BodyContent>
+        <button>Child - 02</button>
+      </BodyContent>
     </>
   );
 }
